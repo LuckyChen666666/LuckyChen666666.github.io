@@ -1436,7 +1436,7 @@ canvas:not(#ribbon-canvas),
 :root {
   --global-font-size: 14px;
   --global-bg: #fff;
-  --font-color: #4c4948;
+  --font-color: rgba(0,0,0,1);
   --hr-border: #a4d8fa;
   --hr-before-color: #80c8f8;
   --search-bg: #f6f8fa;
