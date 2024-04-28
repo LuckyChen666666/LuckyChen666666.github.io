@@ -6145,7 +6145,7 @@ blockquote.pullquote.right {
   display: none;
   background: rgba(0,0,0,0.6);
 }
-span.math.inline>mjx-container{
+span.math.inline {
   overflow-x: visible;
   overflow-y: visible;
 }
