@@ -6146,6 +6146,6 @@ blockquote.pullquote.right {
   background: rgba(0,0,0,0.6);
 }
 span.math.inline {
-  overflow-x: visible;
-  overflow-y: visible;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
