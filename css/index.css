@@ -1499,6 +1499,17 @@ body {
 input::placeholder {
   color: var(--font-color);
 }
+h1 {
+  text-align: center; /* 标题居中 */
+}
+h1::after {
+  content: ""; /* 使用伪元素添加横线 */
+  display: block;
+  width: 100%; /* 横线宽度 */
+  margin: 0 auto; /* 横线居中 */
+  border-bottom: 1px solid #49b1f5; /* 横线样式 */
+ padding: 3px 0; /* 设置横线与文本的行间距 */
+}
 h1,
 h2,
 h3,
