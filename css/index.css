@@ -13,8 +13,8 @@ main {
 }
 
 h1 {
-  font-size: 2em;
   color: #49b1f5;
+  font-size: 2em;
   text-align: center;  
   margin: .67em 0
 }
@@ -25,7 +25,7 @@ h1::after {
   width: 100%; /* 横线宽度 */
   margin: 0 auto; /* 横线居中 */
   border-bottom: 1px solid #49b1f5; /* 横线样式 */
- padding: 1.5px 0 /* 设置横线与文本的行间距 */
+ padding: 0.2px 0 /* 设置横线与文本的行间距 */
 }
 
 hr {
