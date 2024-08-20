@@ -15,7 +15,7 @@ main {
 h1 {
   font-size: 2em;
   text-align: center; /* 标题居中 */
-  color: rgb(0, 150, 136); /* 设置字体颜色 */
+  /* color: rgb(0, 150, 136); */
   margin: .1em 0
 }
 
@@ -24,7 +24,7 @@ h1::after {
   display: block;
   width: 100%; /* 横线宽度 */
   margin: 0 auto; /* 横线居中 */
-  border-bottom: 1px solid rgb(0,150,136); /* 横线样式 */
+  border-bottom: 1px solid #000; /* 横线样式 */
   padding: 0px 0; /* 设置横线与文本的行间距 */
 }
 
