@@ -8,20 +8,7 @@
       <link href="/2024/08/27/dian-nao-chang-yong-kuai-jie-jian/"/>
       <url>/2024/08/27/dian-nao-chang-yong-kuai-jie-jian/</url>
       
-        <content type="html"><![CDATA[<h2 id="通用">通用</h2><ul><li><code>Ctrl</code> + <code>C</code> : 复制</li><li><code>Ctrl</code> + <code>V</code> : 粘贴</li><li><code>Ctrl</code> + <code>X</code> : 剪切</li><li><code>Ctrl</code> + <code>A</code> : 全选</li><li><code>Ctrl</code> + <code>S</code> : 保存</li><li><code>Ctrl</code> + <code>Z</code> : 撤销</li><li><code>Ctrl</code> + <code>Shift</code> + <code>Z</code> :取消撤销</li><li><code>Ctrl</code> + <code>Shift</code> + <code>End</code> :向后全选</li><li><code>Ctrl</code> + <code>Shift</code> + <code>Home</code> :向前全选</li><li><code>徽标</code> + <code>;</code> : 打开 emoji 面板,可以快速查找并输入 emoji</li><li><code>徽标</code> + <code>V</code> : 查看剪切板历史</li></ul><blockquote><p><strong>注</strong>笔记本电脑上的<code>End</code>键与<code>Home</code>键一般位于数字键<code>1</code>与<code>7</code>处.此外,在笔记本电脑上使用<code>End</code>与<code>Home</code>键时需要先按下<code>NumLock</code>键将数字锁定.</p></blockquote><h2 id="texstudio">TeXstudio</h2><ul><li><code>Ctrl</code> + <code>Shift</code> + <code>M</code> :行内公式</li><li><code>Alt</code> + <code>Shift</code> + <code>M</code> :行间公式</li><li><code>Ctrl</code> + <code>T</code> : 注释/取消注释</li></ul><h2 id="pycharm">PyCharm</h2><ul><li><code>Tab</code> : 缩进一次</li><li><code>Shift</code> + <code>Tab</code> : 取消缩进一次</li><li><code>Ctrl</code> + <code>Alt</code> + <code>L</code> :格式化代码</li><li><code>Ctrl</code> + <code>/</code> : 注释/取消注释</li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>电脑</title>
-      <link href="/2024/08/27/dian-nao/"/>
-      <url>/2024/08/27/dian-nao/</url>
-      
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="通用">通用</h2><ul><li><code>Ctrl</code> + <code>C</code> : 复制</li><li><code>Ctrl</code> + <code>V</code> : 粘贴</li><li><code>Ctrl</code> + <code>X</code> : 剪切</li><li><code>Ctrl</code> + <code>A</code> : 全选</li><li><code>Ctrl</code> + <code>S</code> : 保存</li><li><code>Ctrl</code> + <code>Z</code> : 撤销</li><li><code>Ctrl</code> + <code>Shift</code> + <code>Z</code> :取消撤销</li><li><code>Ctrl</code> + <code>Shift</code> + <code>End</code> :向后全选</li><li><code>Ctrl</code> + <code>Shift</code> + <code>Home</code> :向前全选</li><li><code>徽标</code> + <code>;</code> : 打开 emoji 面板,可以快速查找并输入 emoji</li><li><code>徽标</code> + <code>V</code> : 查看剪切板历史</li></ul><p><strong>注</strong>: 笔记本电脑上的 <code>End</code> 键与<code>Home</code> 键一般位于数字键 <code>1</code> 与 <code>7</code> 处.此外, 在笔记本电脑上使用 <code>End</code> 与 <code>Home</code>键时需要先按下 <code>NumLock</code> 键将数字锁定.</p><h2 id="texstudio">TeXstudio</h2><ul><li><code>Ctrl</code> + <code>Shift</code> + <code>M</code> :行内公式</li><li><code>Alt</code> + <code>Shift</code> + <code>M</code> :行间公式</li><li><code>Ctrl</code> + <code>T</code> : 注释/取消注释</li></ul><h2 id="pycharm">PyCharm</h2><ul><li><code>Tab</code> : 缩进一次</li><li><code>Shift</code> + <code>Tab</code> : 取消缩进一次</li><li><code>Ctrl</code> + <code>Alt</code> + <code>L</code> :格式化代码</li><li><code>Ctrl</code> + <code>/</code> : 注释/取消注释</li></ul>]]></content>
       
       
       

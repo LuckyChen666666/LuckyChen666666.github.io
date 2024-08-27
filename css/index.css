@@ -1522,7 +1522,7 @@ h6 {
   font-weight: bold;
 }
 h2 {
-  border-left: 4px solid #49b1f5; /* 添加蓝色竖线 */
+  border-left: 5px solid #49b1f5; /* 添加蓝色竖线 */
   padding-left: 10px; /* 设置竖线与文本之间的间距 */
 }
 h1 code,
