@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>latex生成的pdf转svg</title>
+      <link href="/2024/08/30/latex-sheng-cheng-de-pdf-zhuan-svg/"/>
+      <url>/2024/08/30/latex-sheng-cheng-de-pdf-zhuan-svg/</url>
+      
+        <content type="html"><![CDATA[<p>python 代码如下:</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line">os.chdir(<span class="string">r&quot;D:\LaTeX文件&quot;</span>)</span><br><span class="line">os.system(<span class="string">&quot;pdftocairo -svg CD.pdf&quot;</span>)</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>电脑常用快捷键</title>
       <link href="/2024/08/27/dian-nao-chang-yong-kuai-jie-jian/"/>
       <url>/2024/08/27/dian-nao-chang-yong-kuai-jie-jian/</url>
