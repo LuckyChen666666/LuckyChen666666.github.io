@@ -5,6 +5,19 @@
     
     <entry>
       <title></title>
+      <link href="/2024/10/02/zai-xian-hua-ban/"/>
+      <url>/2024/10/02/zai-xian-hua-ban/</url>
+      
+        <content type="html"><![CDATA[<!DOCTYPE html><html lang="en"><head>    <meta charset="UTF-8">    <meta http-equiv="X-UA-Compatible" content="IE=edge">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Document</title>    <style>        button.active {            color: #fff;            background-color: orangered;        }        canvas {            border: 2px solid rgb(218, 10, 225);        }    </style></head><body>    <canvas width="800" height="600"></canvas>    <button id="boldBtn">粗线条</button>    <button id="thinBtn">细线条</button>    <button id="saveBtn">保存签名</button>    <input type="color" id="color">    <button id="clearBtn">橡皮擦</button>    <button id="nullBtn">清空画布</button>    <script>        let canvas = document.querySelector('canvas')        let ctx = canvas.getContext('2d')        // 连接处圆润        ctx.lineJoin = 'round'        // 开端与结束圆润        ctx.lineCap = 'round'        // 获取输入框与按钮        // 粗画笔        let boldBtn = document.querySelector('#boldBtn')        // 细画笔        let thinBtn = document.querySelector('#thinBtn')        // 颜色选择        let inputColor = document.querySelector('#color')        // 保存图形的按钮        let saveBtn = document.querySelector('#saveBtn')        // 橡皮擦按钮        let clearBtn = document.querySelector('#clearBtn')        // 清空画布的按钮        let nullBtn = document.querySelector('#nullBtn')        // 设置允许绘制的变量        let isDraw = false        canvas.onmousedown = function () {            isDraw = true            ctx.beginPath()            let x = event.pageX - canvas.offsetLeft            let y = event.pageY - canvas.offsetTop            ctx.moveTo(x, y)        }        canvas.onmouseleave = function () {            isDraw = false            ctx.closePath()        }        canvas.onmouseup = function () {            isDraw = false            ctx.closePath()        }        canvas.onmousemove = function (){            if(isDraw)            {                let x = event.pageX - canvas.offsetLeft                let y = event.pageY - canvas.offsetTop                ctx.lineTo(x, y)                ctx.stroke()            }        }        // 绘制粗线条        boldBtn.onclick = function () {            ctx.globalCompositeOperation = "source-over"            ctx.lineWidth = 20            boldBtn.classList.add('active')            thinBtn.classList.remove('active')            clearBtn.classList.remove('active')        }        // 绘制细线条        thinBtn.onclick = function () {            ctx.globalCompositeOperation = "source-over"            ctx.lineWidth = 2            thinBtn.classList.add('active')            boldBtn.classList.remove('active')            clearBtn.classList.remove('active')        }        // 橡皮擦        clearBtn.onclick = function () {            ctx.globalCompositeOperation = "destination-out"            ctx.lineWidth = 30            clearBtn.classList.add('active')            boldBtn.classList.remove('active')            thinBtn.classList.remove('active')        }        // 清空画布        nullBtn.onclick = function () {            ctx.clearRect(0, 0, 800, 600)        }        // 保存图片        saveBtn.onclick = function () {            let urlData = canvas.toDataURL()            let downloadA = document.createElement('a')            downloadA.setAttribute('download', '酷炫签名')            downloadA.href = urlData            downloadA.click()        }        // 改变画笔颜色        inputColor.onchange = function () {            ctx.strokeStyle = inputColor.value        }    </script></body></html>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
       <link href="/2024/10/02/mian-xiang-dui-xiang-xiao-qiu-jia-zi/"/>
       <url>/2024/10/02/mian-xiang-dui-xiang-xiao-qiu-jia-zi/</url>
       
