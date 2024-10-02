@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title></title>
+      <link href="/2024/10/02/mian-xiang-dui-xiang-xiao-qiu-jia-zi/"/>
+      <url>/2024/10/02/mian-xiang-dui-xiang-xiao-qiu-jia-zi/</url>
+      
+        <content type="html"><![CDATA[<!DOCTYPE html><html lang="en"><head>    <meta charset="UTF-8">    <meta http-equiv="X-UA-Compatible" content="IE=edge">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Document</title>    <style>        canvas {            border: 1px solid rgb(237, 219, 19);        }    </style></head><body>    <canvas width="500" height="500"></canvas>    <script>        let canvas = document.querySelector('canvas')        let ctx = canvas.getContext('2d')        // 获取画布宽高        let w = canvas.width        let h = canvas.height                function r(num)        {            return Math.random() * num        }        // 定义一个绘制文字的函数        function drawText(text, x, y, color, r)        {             ctx.font = `${r/2}px 楷体`            ctx.textAlign = "center"            ctx.textBaseline = "middle"            ctx.fillStyle = color            ctx.fillText(text, x, y)                    }        // 定义小球类        class Ball        {            constructor(text)             {                this.x = r(5) + 60                this.y = r(3) + 60                this.r = r(50) + 10 // [10,60)                this.color = `rgb(${r(255)},${r(255)},${r(255)})`                this.textColor = `rgb(${r(255)},${r(255)},${r(255)})`                this.xSpeed = r(3) + 2 // [2,5)                this.ySpeed = r(3) + 1 // [1,4)                this.text = text            }            show()            {                this.run()                ctx.beginPath()                ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2)                ctx.fillStyle = this.color                ctx.fill()                drawText(this.text, this.x, this.y, this.textColor, this.r)            }            run(){                if(this.x - this.r <= 0 || this.x + this.r > w)                {                    this.xSpeed = -this.xSpeed                }                // 水平运动                this.x = this.x + this.xSpeed                if(this.y - this.r <= 0 || this.y + this.r > h)                {                    this.ySpeed = -this.ySpeed                }                // 垂直运动                this.y = this.y + this.ySpeed                }                    }        // 创建小球数组        let ballArr = []        // 创建文字数组        let titleArr = ['一', '二', '三', '四', '五']        // 创造小球        for(let i = 0; i < 50; i++)        {            let random = Math.floor(Math.random()*(4 + 1))            let ball = new Ball(titleArr[random])            ballArr.push(ball)            ball.show()        }        // 小球运动        function render(){            ctx.clearRect(0, 0, w, h)            for(let i = 0; i < ballArr.length; i++)            {                ballArr[i].show()            }            requestAnimationFrame(render)        }        render()    </script></body></html>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>latex笔记导言区模板</title>
       <link href="/2024/09/15/latex-bi-ji-dao-yan-qu-mo-ban/"/>
       <url>/2024/09/15/latex-bi-ji-dao-yan-qu-mo-ban/</url>
