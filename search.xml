@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>用github生成网页链接</title>
+      <link href="/2024/10/18/yong-github-sheng-cheng-wang-ye-lian-jie/"/>
+      <url>/2024/10/18/yong-github-sheng-cheng-wang-ye-lian-jie/</url>
+      
+        <content type="html"><![CDATA[<ul><li>日月交替: <ahref="https://luckychen666666.github.io/SunAndMoon/">https://luckychen666666.github.io/SunAndMoon/</a></li></ul><ol type="1"><li><p>首先需要有一个github账号, 如果没有, 请注册一个;</p></li><li><p>创建一个新仓库, 仓库的名字可以自己取,如：<code>luckychen666666.github.io</code>;</p></li><li><p>进入仓库--&gt;Settings--&gt;Pages, 在branch选择<code>main</code>,然后点击<code>Save</code>;</p></li><li><p>等待片刻即可.</p></li></ol><figure><img src="https://s21.ax1x.com/2024/10/18/pAURLTO.png"alt="pAURLTO.png" /><figcaption aria-hidden="true">pAURLTO.png</figcaption></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>文章文件的存放位置</title>
       <link href="/2024/10/07/wen-zhang-wen-jian-de-cun-fang-wei-zhi/"/>
       <url>/2024/10/07/wen-zhang-wen-jian-de-cun-fang-wei-zhi/</url>
