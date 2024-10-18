@@ -17,50 +17,11 @@
     
     
     <entry>
-      <title></title>
-      <link href="/2024/10/02/xuan-ku-wen-zi-te-xiao/"/>
-      <url>/2024/10/02/xuan-ku-wen-zi-te-xiao/</url>
-      
-        <content type="html"><![CDATA[<!DOCTYPE html><html><head><title>Cool Text Effect</title><style>.text {font-size: 80px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;background: linear-gradient(to right, #ff758c, #ff7eb3);-webkit-background-clip: text;-webkit-text-fill-color: transparent;animation: animate 5s linear infinite;            animation-direction: alternate;transform: perspective(1000px) rotateY(20deg);text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);}@keyframes animate {0% {background-position: 0%;transform: perspective(1000px) rotateY(20deg);}100% {background-position: 200%;transform: perspective(1000px) rotateY(-20deg);}}</style></head><body><h1 class="text">Hello World!</h1></body></html>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/2024/10/02/zai-xian-hua-ban/"/>
-      <url>/2024/10/02/zai-xian-hua-ban/</url>
-      
-        <content type="html"><![CDATA[<!DOCTYPE html><html lang="en"><head>    <meta charset="UTF-8">    <meta http-equiv="X-UA-Compatible" content="IE=edge">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Document</title>    <style>        button.active {            color: #fff;            background-color: orangered;        }        canvas {            border: 2px solid rgb(218, 10, 225);        }    </style></head><body>    <canvas width="800" height="600"></canvas>    <button id="boldBtn">粗线条</button>    <button id="thinBtn">细线条</button>    <button id="saveBtn">保存签名</button>    <input type="color" id="color">    <button id="clearBtn">橡皮擦</button>    <button id="nullBtn">清空画布</button>    <script>        let canvas = document.querySelector('canvas')        let ctx = canvas.getContext('2d')        // 连接处圆润        ctx.lineJoin = 'round'        // 开端与结束圆润        ctx.lineCap = 'round'        // 获取输入框与按钮        // 粗画笔        let boldBtn = document.querySelector('#boldBtn')        // 细画笔        let thinBtn = document.querySelector('#thinBtn')        // 颜色选择        let inputColor = document.querySelector('#color')        // 保存图形的按钮        let saveBtn = document.querySelector('#saveBtn')        // 橡皮擦按钮        let clearBtn = document.querySelector('#clearBtn')        // 清空画布的按钮        let nullBtn = document.querySelector('#nullBtn')        // 设置允许绘制的变量        let isDraw = false        canvas.onmousedown = function () {            isDraw = true            ctx.beginPath()            let x = event.pageX - canvas.offsetLeft            let y = event.pageY - canvas.offsetTop            ctx.moveTo(x, y)        }        canvas.onmouseleave = function () {            isDraw = false            ctx.closePath()        }        canvas.onmouseup = function () {            isDraw = false            ctx.closePath()        }        canvas.onmousemove = function (){            if(isDraw)            {                let x = event.pageX - canvas.offsetLeft                let y = event.pageY - canvas.offsetTop                ctx.lineTo(x, y)                ctx.stroke()            }        }        // 绘制粗线条        boldBtn.onclick = function () {            ctx.globalCompositeOperation = "source-over"            ctx.lineWidth = 20            boldBtn.classList.add('active')            thinBtn.classList.remove('active')            clearBtn.classList.remove('active')        }        // 绘制细线条        thinBtn.onclick = function () {            ctx.globalCompositeOperation = "source-over"            ctx.lineWidth = 2            thinBtn.classList.add('active')            boldBtn.classList.remove('active')            clearBtn.classList.remove('active')        }        // 橡皮擦        clearBtn.onclick = function () {            ctx.globalCompositeOperation = "destination-out"            ctx.lineWidth = 30            clearBtn.classList.add('active')            boldBtn.classList.remove('active')            thinBtn.classList.remove('active')        }        // 清空画布        nullBtn.onclick = function () {            ctx.clearRect(0, 0, 800, 600)        }        // 保存图片        saveBtn.onclick = function () {            let urlData = canvas.toDataURL()            let downloadA = document.createElement('a')            downloadA.setAttribute('download', '酷炫签名')            downloadA.href = urlData            downloadA.click()        }        // 改变画笔颜色        inputColor.onchange = function () {            ctx.strokeStyle = inputColor.value        }    </script></body></html>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/2024/10/02/mian-xiang-dui-xiang-xiao-qiu-jia-zi/"/>
-      <url>/2024/10/02/mian-xiang-dui-xiang-xiao-qiu-jia-zi/</url>
-      
-        <content type="html"><![CDATA[<!DOCTYPE html><html lang="en"><head>    <meta charset="UTF-8">    <meta http-equiv="X-UA-Compatible" content="IE=edge">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Document</title>    <style>        canvas {            border: 1px solid rgb(237, 219, 19);        }    </style></head><body>    <canvas width="500" height="500"></canvas>    <script>        let canvas = document.querySelector('canvas')        let ctx = canvas.getContext('2d')        // 获取画布宽高        let w = canvas.width        let h = canvas.height                function r(num)        {            return Math.random() * num        }        // 定义一个绘制文字的函数        function drawText(text, x, y, color, r)        {             ctx.font = `${r/2}px 楷体`            ctx.textAlign = "center"            ctx.textBaseline = "middle"            ctx.fillStyle = color            ctx.fillText(text, x, y)                    }        // 定义小球类        class Ball        {            constructor(text)             {                this.x = r(5) + 60                this.y = r(3) + 60                this.r = r(50) + 10 // [10,60)                this.color = `rgb(${r(255)},${r(255)},${r(255)})`                this.textColor = `rgb(${r(255)},${r(255)},${r(255)})`                this.xSpeed = r(3) + 2 // [2,5)                this.ySpeed = r(3) + 1 // [1,4)                this.text = text            }            show()            {                this.run()                ctx.beginPath()                ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2)                ctx.fillStyle = this.color                ctx.fill()                drawText(this.text, this.x, this.y, this.textColor, this.r)            }            run(){                if(this.x - this.r <= 0 || this.x + this.r > w)                {                    this.xSpeed = -this.xSpeed                }                // 水平运动                this.x = this.x + this.xSpeed                if(this.y - this.r <= 0 || this.y + this.r > h)                {                    this.ySpeed = -this.ySpeed                }                // 垂直运动                this.y = this.y + this.ySpeed                }                    }        // 创建小球数组        let ballArr = []        // 创建文字数组        let titleArr = ['一', '二', '三', '四', '五']        // 创造小球        for(let i = 0; i < 50; i++)        {            let random = Math.floor(Math.random()*(4 + 1))            let ball = new Ball(titleArr[random])            ballArr.push(ball)            ball.show()        }        // 小球运动        function render(){            ctx.clearRect(0, 0, w, h)            for(let i = 0; i < ballArr.length; i++)            {                ballArr[i].show()            }            requestAnimationFrame(render)        }        render()    </script></body></html>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>LaTeX笔记导言区模板</title>
+      <title>LaTeX笔记模板</title>
       <link href="/2024/09/15/latex-bi-ji-dao-yan-qu-mo-ban/"/>
       <url>/2024/09/15/latex-bi-ji-dao-yan-qu-mo-ban/</url>
       
-        <content type="html"><![CDATA[<ul><li>各个环境单独编号: <ahref="https://easylink.cc/tsqn5v">BookPreamble01.tex</a></li><li>各个环境共享编号: <ahref="https://easylink.cc/bykda3">BookPreamble02.tex</a></li><li>各个环境共享编号, 带彩色框框环境: <ahref="https://easylink.cc/tl0hfp">BookPreamble03.tex</a></li></ul>]]></content>
+        <content type="html"><![CDATA[<ul><li>学习笔记模板: <ahref="https://easylink.cc/wz627u">学习笔记模板.zip</a></li></ul><!-- - 各个环境单独编号: [BookPreamble01.tex](https://easylink.cc/tsqn5v)- 各个环境共享编号: [BookPreamble02.tex](https://easylink.cc/bykda3)- 各个环境共享编号, 带彩色框框环境: [BookPreamble03.tex](https://easylink.cc/tl0hfp) -->]]></content>
       
       
       
@@ -75,7 +36,7 @@
     
     
     <entry>
-      <title>数学书PDF</title>
+      <title>一些数学教材的PDF</title>
       <link href="/2024/09/01/shu-xue-shu-pdf/"/>
       <url>/2024/09/01/shu-xue-shu-pdf/</url>
       
@@ -117,7 +78,7 @@
       <link href="/2024/08/30/latex-sheng-cheng-de-pdf-zhuan-svg/"/>
       <url>/2024/08/30/latex-sheng-cheng-de-pdf-zhuan-svg/</url>
       
-        <content type="html"><![CDATA[<p>python 代码如下: </p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line">os.chdir(<span class="string">r&quot;D:\LaTeX文件&quot;</span>)</span><br><span class="line">os.system(<span class="string">&quot;pdftocairo -svg CD.pdf&quot;</span>)</span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<p>python 代码如下:</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line">os.chdir(<span class="string">r&quot;D:\LaTeX文件&quot;</span>)</span><br><span class="line">os.system(<span class="string">&quot;pdftocairo -svg CD.pdf&quot;</span>)</span><br></pre></td></tr></table></figure>]]></content>
       
       
       
@@ -143,7 +104,7 @@
       <link href="/2024/08/26/shu-tong-yuan-ben-ke-bi-ye-lun-wen-mo-ban-jiang-jie-shi-pin/"/>
       <url>/2024/08/26/shu-tong-yuan-ben-ke-bi-ye-lun-wen-mo-ban-jiang-jie-shi-pin/</url>
       
-        <content type="html"><![CDATA[<p><ahref="https://easylink.cc/c9gk3j">数统院本科毕业论文模板讲解视频</a></p>]]></content>
+        <content type="html"><![CDATA[<ul><li><ahref="https://easylink.cc/c9gk3j">数统院本科毕业论文模板讲解视频</a></li></ul>]]></content>
       
       
       
@@ -175,7 +136,7 @@
       <link href="/2024/08/24/wo-xi-huan-de-yin-le/"/>
       <url>/2024/08/24/wo-xi-huan-de-yin-le/</url>
       
-        <content type="html"><![CDATA[<h1 id="中国韵味">中国韵味</h1><h2 id="后弦">后弦</h2><ul><li>那年印象刘三姐</li><li>卢沟晓月</li><li>昆明湖</li><li>唐宋元明清</li><li>苏州城外的微笑</li><li>画风</li><li>下完这场雨</li><li>西厢</li><li>爱妃</li><li>柑香亭</li><li>香江边上</li><li>花甲</li><li>素贞</li><li>笔墨伺候</li><li>遇见一生</li><li>峨眉雪</li></ul><h2 id="周杰伦">周杰伦</h2><ul><li>娘子</li><li>东风破</li><li>发如雪</li><li>青花瓷</li><li>兰亭序</li><li>烟花易冷</li><li>雨下一整晚</li><li>天涯过客</li><li>菊花台</li><li>千里之外</li><li>龙拳</li><li>上海一九四三</li><li>双截棍</li><li>双刀</li></ul><h2 id="王力宏">王力宏</h2><ul><li>花田错</li><li>天地龙鳞</li><li>心中的日月</li><li>缘分一道桥</li><li>听爱</li><li>在梅边</li><li>盖世英雄</li></ul><h2 id="胡彦斌">胡彦斌</h2><ul><li>潇湘雨</li><li>月光</li><li>画中城</li><li>笔墨登场</li><li>林妹妹</li><li>逍遥游</li><li>红颜</li><li>诀别诗</li><li>蝴蝶</li></ul><h2 id="其他">其他</h2><ul><li>Susan说 (陶喆)</li><li>上阳台帖 (阿云嘎)</li><li>三国恋 (Tank)</li><li>为红颜 (Tank)</li><li>花恋蝶 (南拳妈妈)</li><li>无瑕 (南拳妈妈)</li><li>画卷 (张艺兴)</li><li>飞天 (张艺兴)</li><li>苏州河 (薛凯琪)</li></ul><h1 id="青春萌动">青春萌动</h1><h2 id="后弦-1">后弦</h2><ul><li>很有爱</li><li>情书不包邮</li><li>娃娃脸</li><li>单车恋人</li><li>黑板情书</li><li>小周末</li><li>公主抱</li></ul><h2 id="周杰伦-1">周杰伦</h2><ul><li>简单爱</li><li>园游会</li><li>告白气球</li><li>甜甜的</li><li>浪漫手机</li><li>麦芽糖</li><li>大笨钟</li></ul><h2 id="其他-1">其他</h2><ul><li>我的未来不是梦 (张雨生)</li><li>皇帝 (胡彦斌)</li></ul>]]></content>
+        <content type="html"><![CDATA[<h1 id="中国韵味">中国韵味</h1><h2 id="后弦">后弦</h2><ul><li>那年印象刘三姐</li><li>卢沟晓月</li><li>昆明湖</li><li>唐宋元明清</li><li>苏州城外的微笑</li><li>画风</li><li>下完这场雨</li><li>西厢</li><li>爱妃</li><li>柑香亭</li><li>香江边上</li><li>花甲</li><li>素贞</li><li>笔墨伺候</li><li>遇见一生</li><li>峨眉雪</li></ul><h2 id="周杰伦">周杰伦</h2><ul><li>娘子</li><li>东风破</li><li>发如雪</li><li>青花瓷</li><li>兰亭序</li><li>烟花易冷</li><li>雨下一整晚</li><li>天涯过客</li><li>菊花台</li><li>千里之外</li><li>龙拳</li><li>上海一九四三</li><li>双截棍</li><li>双刀</li></ul><h2 id="王力宏">王力宏</h2><ul><li>花田错</li><li>天地龙鳞</li><li>心中的日月</li><li>缘分一道桥</li><li>听爱</li><li>在梅边</li><li>盖世英雄</li></ul><h2 id="胡彦斌">胡彦斌</h2><ul><li>潇湘雨</li><li>月光</li><li>画中城</li><li>笔墨登场</li><li>林妹妹</li><li>逍遥游</li><li>红颜</li><li>诀别诗</li><li>蝴蝶</li></ul><h2 id="其他">其他</h2><ul><li>Susan说 (陶喆)</li><li>上阳台帖 (阿云嘎)</li><li>三国恋 (Tank)</li><li>为红颜 (Tank)</li><li>花恋蝶 (南拳妈妈)</li><li>无瑕 (南拳妈妈)</li><li>画卷 (张艺兴)</li><li>飞天 (张艺兴)</li><li>苏州河 (薛凯琪)</li></ul><!-- # 青春萌动## 后弦- 很有爱- 情书不包邮- 娃娃脸- 单车恋人- 黑板情书- 小周末- 公主抱## 周杰伦- 简单爱- 园游会- 告白气球- 甜甜的- 浪漫手机- 麦芽糖- 大笨钟## 其他- 我的未来不是梦 (张雨生)- 皇帝 (胡彦斌) -->]]></content>
       
       
       
@@ -191,8 +152,8 @@
     
     <entry>
       <title>数学笔记PDF汇总</title>
-      <link href="/2024/08/24/shu-xue-bi-ji-pdf-hui-zong/"/>
-      <url>/2024/08/24/shu-xue-bi-ji-pdf-hui-zong/</url>
+      <link href="/2024/08/24/ben-ke-shu-xue-bi-ji-pdf-hui-zong/"/>
+      <url>/2024/08/24/ben-ke-shu-xue-bi-ji-pdf-hui-zong/</url>
       
         <content type="html"><![CDATA[<h1 id="自学笔记">自学笔记</h1><ul><li><a href="https://easylink.cc/w390yw">高等代数</a> (参考文献: SheldonAxler 的 <em>Linear Algebra Done Right 3th</em>)</li><li><a href="https://easylink.cc/n9sris">数学分析 (上)</a> (参考文献:张筑生《数学分析新讲》, 陶哲轩《实分析》)</li><li><a href="https://easylink.cc/pmlssh">数学分析 (下)</a> (参考文献:张筑生《数学分析新讲》, 陶哲轩《实分析》)</li><li><a href="https://easylink.cc/tcrjge">泛函分析</a></li><li><a href="https://easylink.cc/qaqo90">复变函数</a></li></ul><h1 id="专业课资料">专业课资料</h1><ul><li><a href="https://easylink.cc/6xiqod">几何学选讲</a></li><li><a href="https://easylink.cc/xgybf1">变分学</a></li><li><a href="https://easylink.cc/cjc350">概率论与数理统计</a></li><li><a href="https://easylink.cc/to7ipi">几何学选讲 (考纲)</a></li><li><a href="https://easylink.cc/wi5kbz">模论与环论基础</a></li><li><a href="https://easylink.cc/lf9a3q">数理逻辑</a></li><li><a href="https://easylink.cc/7ik5cb">数学分析专题选讲</a></li><li><a href="https://easylink.cc/hy1g3l">微分几何</a></li><li><ahref="https://easylink.cc/109egq">应数班复变第三章爆强复习资料</a></li><li><a href="https://easylink.cc/18hdic">运筹学</a></li></ul>]]></content>
       
@@ -213,7 +174,7 @@
       <link href="/2024/08/18/gong-ju-tui-jian/yi-xie-hao-yong-de-ruan-jian/"/>
       <url>/2024/08/18/gong-ju-tui-jian/yi-xie-hao-yong-de-ruan-jian/</url>
       
-        <content type="html"><![CDATA[<h1 id="工具推荐"><a href="#工具推荐" class="headerlink" title="工具推荐"></a>工具推荐</h1><ol><li>Everything: 全能搜索工具, 可以快速搜索电脑上的文件. <a href="https://everything.en.softonic.com/">https://everything.en.softonic.com/</a></li><li>PixPin: 截图工具 (截长图、文本识别、GIF 录制). <a href="https://pixpin.cn/">https://pixpin.cn/</a></li><li>Keyviz: 键盘显示工具. <a href="https://mularahul.github.io/keyviz/">https://mularahul.github.io/keyviz/</a></li><li>ClickShow: 鼠标手势工具. <a href="https://github.com/cuiliang/ClickShow/">https://github.com/cuiliang/ClickShow/</a></li><li>DesktopOK: 电脑桌面图标管理工具. <a href="https://www.softwareok.com/?seite=Freeware/DesktopOK">https://www.softwareok.com/?seite=Freeware/DesktopOK</a></li><li>Optimizer: Windows 系统优化、管理工具. <a href="https://github.com/hellzerg/optimizer">https://github.com/hellzerg/optimizer</a></li><li>ContextMenuManager: 右键菜单管理工具. <a href="https://gitee.com/BluePointLilac/ContextMenuManager">https://gitee.com/BluePointLilac/ContextMenuManager</a></li><li>AutoHotkey: 热键工具. <a href="https://www.autohotkey.com/">https://www.autohotkey.com/</a></li><li>MiniRenamer: 文件批量重命名工具. <a href="https://easylink.cc/ur9n34">https://easylink.cc/ur9n34</a></li><li>PowerToys: Windows 工具合集. (可在 Microsoft Store 中下载)</li><li>NanaZip: 解压工具. (可在 Microsoft Store 中下载)</li><li>Ditto: 剪贴板管理工具. <a href="https://ditto-cp.sourceforge.io/index.php">https://ditto-cp.sourceforge.io/index.php</a></li></ol><h1 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h1><h2 id="AutoHotkey"><a href="#AutoHotkey" class="headerlink" title="AutoHotkey"></a>AutoHotkey</h2><p>以下是使用AutoHotkey编写的一个在 LaTeX 中快速进入数学模式的脚本 (命名为 latex_math.ahk):<br><figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#Requires AutoHotkey v1.1.30.00  ; 确保使用1.1版本或更高</span></span><br><span class="line"><span class="title">^m::</span></span><br><span class="line"><span class="comment">; 这段代码会在活动窗口中模拟键盘输入</span></span><br><span class="line"><span class="built_in">Send,</span> &#123;$&#125;&#123;$&#125;</span><br><span class="line"><span class="comment">; 这行代码会将光标向左移动一个字符，这样光标就会位于两个$之间</span></span><br><span class="line"><span class="built_in">Send,</span> &#123;Left&#125;</span><br><span class="line"><span class="keyword">return</span></span><br></pre></td></tr></table></figure><br><strong>注意</strong>: 写好 AutoHotkey 脚本之后, 我们需要将此 ahk 文件打开才能使用.</p><h2 id="MiniRenamer"><a href="#MiniRenamer" class="headerlink" title="MiniRenamer"></a>MiniRenamer</h2><p>MiniRenamer 是一款开源的文件重命名工具, 它可以批量重命名文件, 并支持正则表达式. 例如, 我们有如下的一批名称不规则的文件:<br><img src="https://s21.ax1x.com/2024/08/20/pAPbN1P.png" alt="pAPbN1P.png"></p><ol><li>在 MiniRenamer 选择 “随机” 中的 “数字递增”.<br><img src="https://s21.ax1x.com/2024/08/20/pAPbaX8.png" alt="pAPbaX8.png"><br>文件名就变成了<br><img src="https://s21.ax1x.com/2024/08/20/pAPb00g.png" alt="pAPb00g.png"></li><li>插入 “图片” 两个字作为前缀<br><img src="https://s21.ax1x.com/2024/08/20/pAPbB7Q.png" alt="pAPbB7Q.png"><br>文件名就变成了<br><img src="https://s21.ax1x.com/2024/08/20/pAPbsts.png" alt="pAPbsts.png"></li></ol>]]></content>
+        <content type="html"><![CDATA[<h1 id="工具推荐">工具推荐</h1><ol type="1"><li>Everything: 全能搜索工具, 可以快速搜索电脑上的文件. <ahref="https://everything.en.softonic.com/">https://everything.en.softonic.com/</a></li><li>PixPin: 截图工具 (截长图、文本识别、GIF 录制). <ahref="https://pixpin.cn/">https://pixpin.cn/</a></li><li>Keyviz: 键盘显示工具. <ahref="https://mularahul.github.io/keyviz/">https://mularahul.github.io/keyviz/</a></li><li>ClickShow: 鼠标手势工具. <ahref="https://github.com/cuiliang/ClickShow/">https://github.com/cuiliang/ClickShow/</a></li><li>DesktopOK: 电脑桌面图标管理工具. <ahref="https://www.softwareok.com/?seite=Freeware/DesktopOK">https://www.softwareok.com/?seite=Freeware/DesktopOK</a></li><li>Optimizer: Windows 系统优化、管理工具. <ahref="https://github.com/hellzerg/optimizer">https://github.com/hellzerg/optimizer</a></li><li>ContextMenuManager: 右键菜单管理工具. <ahref="https://gitee.com/BluePointLilac/ContextMenuManager">https://gitee.com/BluePointLilac/ContextMenuManager</a></li><li>AutoHotkey: 热键工具. <ahref="https://www.autohotkey.com/">https://www.autohotkey.com/</a></li><li>MiniRenamer: 文件批量重命名工具. https://easylink.cc/ur9n34</li><li>PowerToys: Windows 工具合集. (可在 Microsoft Store 中下载)</li><li>NanaZip: 解压工具. (可在 Microsoft Store 中下载)</li><li>Ditto: 剪贴板管理工具. <ahref="https://ditto-cp.sourceforge.io/index.php">https://ditto-cp.sourceforge.io/index.php</a></li></ol><h1 id="附录">附录</h1><h2 id="autohotkey">AutoHotkey</h2><p>以下是使用AutoHotkey编写的一个在 LaTeX 中快速进入数学模式的脚本(命名为 latex_math.ahk): <figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#Requires AutoHotkey v1.1.30.00  ; 确保使用1.1版本或更高</span></span><br><span class="line"><span class="title">^m::</span></span><br><span class="line"><span class="comment">; 这段代码会在活动窗口中模拟键盘输入</span></span><br><span class="line"><span class="built_in">Send,</span> &#123;$&#125;&#123;$&#125;</span><br><span class="line"><span class="comment">; 这行代码会将光标向左移动一个字符，这样光标就会位于两个$之间</span></span><br><span class="line"><span class="built_in">Send,</span> &#123;Left&#125;</span><br><span class="line"><span class="keyword">return</span></span><br></pre></td></tr></table></figure> <strong>注意</strong>: 写好AutoHotkey 脚本之后, 我们需要将此 ahk 文件打开才能使用.</p><h2 id="minirenamer">MiniRenamer</h2><p>MiniRenamer 是一款开源的文件重命名工具, 它可以批量重命名文件,并支持正则表达式. 例如, 我们有如下的一批名称不规则的文件: <imgsrc="https://s21.ax1x.com/2024/08/20/pAPbN1P.png"alt="pAPbN1P.png" /></p><ol type="1"><li>在 MiniRenamer 选择 "随机" 中的 "数字递增". <imgsrc="https://s21.ax1x.com/2024/08/20/pAPbaX8.png" alt="pAPbaX8.png" />文件名就变成了 <img src="https://s21.ax1x.com/2024/08/20/pAPb00g.png"alt="pAPb00g.png" /></li><li>插入 "图片" 两个字作为前缀 <imgsrc="https://s21.ax1x.com/2024/08/20/pAPbB7Q.png" alt="pAPbB7Q.png" />文件名就变成了 <img src="https://s21.ax1x.com/2024/08/20/pAPbsts.png"alt="pAPbsts.png" /></li></ol>]]></content>
       
       
       
