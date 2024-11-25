@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>github桌面版使用教程</title>
+      <link href="/2024/11/25/github-zhuo-mian-ban-shi-yong-jiao-cheng/"/>
+      <url>/2024/11/25/github-zhuo-mian-ban-shi-yong-jiao-cheng/</url>
+      
+        <content type="html"><![CDATA[<ol type="1"><li>安装github桌面版;</li><li>登录github账号;</li><li>将仓库(例如<code>mybook</code>)克隆到本地;</li><li>在本地文件夹内更改文件(包括删除、添加、修改)等, 回到github桌面版,它会自动检测更新;</li><li>填写summary和description, 点击commit按钮;</li><li>点击<code>push origin</code>, 等待片刻即可;</li><li>到github网页端查看更新;</li></ol><p><img src="https://s21.ax1x.com/2024/11/25/pAh1hBq.png" /></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>github加速</title>
       <link href="/2024/11/25/github-jia-su/"/>
       <url>/2024/11/25/github-jia-su/</url>
