@@ -17,19 +17,6 @@
     
     
     <entry>
-      <title>维生素</title>
-      <link href="/2025/02/21/wei-sheng-su/"/>
-      <url>/2025/02/21/wei-sheng-su/</url>
-      
-        <content type="html"><![CDATA[<div class="table-container"><table><thead><tr><th style="text-align:center"></th><th style="text-align:center">功能</th><th style="text-align:right">用量</th></tr></thead><tbody><tr><td style="text-align:center">维生素A</td><td style="text-align:center">防止皮肤干燥、起皮</td><td style="text-align:right">每天5000单位</td></tr><tr><td style="text-align:center">小小勇敢</td><td style="text-align:center">20</td><td style="text-align:right">爬棵勇敢树</td></tr><tr><td style="text-align:center">小小小机智</td><td style="text-align:center">22</td><td style="text-align:right">看一本机智书</td></tr></tbody></table></div>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>我的网址</title>
       <link href="/2024/11/25/wo-de-wang-zhi/"/>
       <url>/2024/11/25/wo-de-wang-zhi/</url>
@@ -60,28 +47,9 @@
       <link href="/2024/11/25/github-jia-su/"/>
       <url>/2024/11/25/github-jia-su/</url>
       
-        <content type="html"><![CDATA[<ol><li>在微软上的下载<code>Watt Toolkit</code> (该软件以前叫做<code>steam++</code>);</li><li>安装完成后, 打开Watt Toolkit, 无需登录, 勾选<code>Github</code>后，点击左上角的<code>一键加速</code>即可;</li><li>Watt Toolkit会显示针对Gihub加速的流量, 点击下方的<code>停止加速</code>结束本次Github访问;</li><li>如果加速失败可以尝试重新调一下代理设置: 点击<code>加速设置</code>—<code>代理设置</code>—<code>自定义DoH地址</code>, 换几个地址试试. 2024年9月15日<code>120.53.53.53</code>可以正常加速. </li></ol><p><strong>注意</strong>: 运行<code>Watt Toolkit</code>加速github的过程中不要使用gitbash发布hexo文章, 否则会报错. </p>]]></content>
+        <content type="html"><![CDATA[<ol type="1"><li>在微软商店下载<code>Watt Toolkit</code>(该软件以前叫做<code>steam++</code>);</li><li>安装完成后, 打开Watt Toolkit, 无需登录,勾选<code>Github</code>后，点击左上角的<code>一键加速</code>即可;</li><li>Watt Toolkit会显示针对Gihub加速的流量,点击下方的<code>停止加速</code>结束本次Github访问;</li><li>如果加速失败可以尝试重新调一下代理设置:点击<code>加速设置</code>--<code>代理设置</code>--<code>自定义DoH地址</code>,换几个地址试试. 2024年9月15日<code>120.53.53.53</code>可以正常加速.</li></ol><p><strong>注意</strong>:运行<code>Watt Toolkit</code>加速github的过程中不要使用gitbash发布hexo文章,否则会报错.</p>]]></content>
       
       
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>我的微信公众号文章</title>
-      <link href="/2024/11/15/wei-xin-gong-zhong-hao-wen-zhang/"/>
-      <url>/2024/11/15/wei-xin-gong-zhong-hao-wen-zhang/</url>
-      
-        <content type="html"><![CDATA[<ul><li><ahref="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzk0MDY3MDc5Mg==&amp;action=getalbum&amp;album_id=3622403644122497039#wechat_redirect">数学之美</a></li><li><ahref="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzk0MDY3MDc5Mg==&amp;action=getalbum&amp;album_id=3435522340711612426#wechat_redirect">代数</a></li><li><ahref="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzk0MDY3MDc5Mg==&amp;action=getalbum&amp;album_id=3384804455296024584#wechat_redirect">几何</a></li><li><ahref="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzk0MDY3MDc5Mg==&amp;action=getalbum&amp;album_id=3382309289968549891#wechat_redirect">分析</a></li><li><ahref="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzk0MDY3MDc5Mg==&amp;action=getalbum&amp;album_id=3378828013336805378#wechat_redirect">LaTeX</a></li></ul>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 数学 </tag>
-            
-        </tags>
       
     </entry>
     
@@ -114,44 +82,6 @@
     
     
     <entry>
-      <title>LaTeX笔记模板</title>
-      <link href="/2024/09/15/latex-bi-ji-mo-ban/"/>
-      <url>/2024/09/15/latex-bi-ji-mo-ban/</url>
-      
-        <content type="html"><![CDATA[<ul><li>学习笔记模板: <a href="https://easylink.cc/gt7n6c">学习笔记模板.zip</a></li></ul>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> LaTeX </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>一些数学教材的PDF</title>
-      <link href="/2024/09/01/shu-xue-shu-pdf/"/>
-      <url>/2024/09/01/shu-xue-shu-pdf/</url>
-      
-        <content type="html"><![CDATA[<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><ul><li><a href="https://luckychen666666.github.io/mybook/Analysis/Real_and_Complex_Analysis-Rudin.pdf">Real and Complex Analysis</a> (Rudin)</li><li><a href="https://luckychen666666.github.io/mybook/Analysis/Functional_Analysis_Sobolev_Spaces_and_Partial_Differential_Equations-Haim_Brezis.pdf">Functional Analysis, Sobolev Spaces and Partial Differential Equations</a> (Haim Brezis)</li></ul><h2 id="代数"><a href="#代数" class="headerlink" title="代数"></a>代数</h2><ul><li><a href="https://luckychen666666.github.io/mybook/Algebra/Algebra_Chapter-0.pdf">Algebra: Chapter 0</a> (Paolo Aluffi)<ul><li><a href="https://luckychen666666.github.io/mybook/Algebra/Errata_for_Algebra_Chapter-0.pdf">Algebra: Chapter 0 更正</a></li></ul></li></ul><h2 id="几何"><a href="#几何" class="headerlink" title="几何"></a>几何</h2><ul><li><a href="https://luckychen666666.github.io/mybook/Geometry/An_Introduction_to_Manifolds-Tu.pdf">An Introduction to Manifolds</a> (Loring W. Tu)<ul><li><a href="https://luckychen666666.github.io/mybook/Geometry/Errata_for_An_Introduction_to_Manifolds-Tu.pdf">An Introduction to Manifolds 2th 更正</a></li></ul></li><li><a href="https://luckychen666666.github.io/mybook/Geometry/Differential_Geometry_Connections_Curvature_and_Characteristic_Classes.pdf">Differential Geometry: Connections, Curvature, and Characteristic Classes</a> (Loring W. Tu)</li></ul><h2 id="拓扑"><a href="#拓扑" class="headerlink" title="拓扑"></a>拓扑</h2><ul><li><a href="https://luckychen666666.github.io/mybook/Topology/Munkres-Topology-HD.pdf">Topology</a> (James Munkres)</li></ul><h2 id="范畴"><a href="#范畴" class="headerlink" title="范畴"></a>范畴</h2><ul><li><a href="https://luckychen666666.github.io/mybook/Category/Basic_Category_Theory.pdf">Basic Category Theory</a> (Tom Leinster)</li></ul><h2 id="方程"><a href="#方程" class="headerlink" title="方程"></a>方程</h2><ul><li><a href="https://luckychen666666.github.io/mybook/Equation/PDE/Partial_Differential_Equations-Evans.pdf">Partial Differential Equations</a> (Evans)</li></ul><h2 id="教材PDF寻找技巧"><a href="#教材PDF寻找技巧" class="headerlink" title="教材PDF寻找技巧:"></a>教材PDF寻找技巧:</h2><ul><li>用 bing 搜索(不要用百度)</li><li>用zlibrary下载</li></ul>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 数学 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>数学图形绘制</title>
       <link href="/2024/09/01/shu-xue-tu-xing-hui-zhi/"/>
       <url>/2024/09/01/shu-xue-tu-xing-hui-zhi/</url>
@@ -175,7 +105,7 @@
       <link href="/2024/08/30/latex-sheng-cheng-de-pdf-zhuan-svg/"/>
       <url>/2024/08/30/latex-sheng-cheng-de-pdf-zhuan-svg/</url>
       
-        <content type="html"><![CDATA[<p>python 代码如下:</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line">os.chdir(<span class="string">r&quot;D:\LaTeX文件&quot;</span>)</span><br><span class="line">os.system(<span class="string">&quot;pdftocairo -svg CD.pdf&quot;</span>)</span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<p>Python 代码如下:</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line">os.chdir(<span class="string">r&quot;D:\LaTeX文件&quot;</span>)</span><br><span class="line">os.system(<span class="string">&quot;pdftocairo -svg CD.pdf&quot;</span>)</span><br></pre></td></tr></table></figure>]]></content>
       
       
       
@@ -221,25 +151,6 @@
         <tags>
             
             <tag> 前端 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>数学笔记PDF汇总</title>
-      <link href="/2024/08/24/ben-ke-shu-xue-bi-ji-pdf-hui-zong/"/>
-      <url>/2024/08/24/ben-ke-shu-xue-bi-ji-pdf-hui-zong/</url>
-      
-        <content type="html"><![CDATA[<h1 id="自学笔记">自学笔记</h1><ul><li><a href="https://easylink.cc/w390yw">高等代数</a> (参考文献: SheldonAxler 的 <em>Linear Algebra Done Right 3th</em>)</li><li><a href="https://easylink.cc/n9sris">数学分析 (上)</a> (参考文献:张筑生《数学分析新讲》, 陶哲轩《实分析》)</li><li><a href="https://easylink.cc/pmlssh">数学分析 (下)</a> (参考文献:张筑生《数学分析新讲》, 陶哲轩《实分析》)</li><li><a href="https://easylink.cc/tcrjge">泛函分析</a></li><li><a href="https://easylink.cc/qaqo90">复变函数</a></li></ul><h1 id="专业课资料">专业课资料</h1><ul><li><a href="https://easylink.cc/6xiqod">几何学选讲</a></li><li><a href="https://easylink.cc/xgybf1">变分学</a></li><li><a href="https://easylink.cc/cjc350">概率论与数理统计</a></li><li><a href="https://easylink.cc/to7ipi">几何学选讲 (考纲)</a></li><li><a href="https://easylink.cc/wi5kbz">模论与环论基础</a></li><li><a href="https://easylink.cc/lf9a3q">数理逻辑</a></li><li><a href="https://easylink.cc/7ik5cb">数学分析专题选讲</a></li><li><a href="https://easylink.cc/hy1g3l">微分几何</a></li><li><ahref="https://easylink.cc/109egq">应数班复变第三章爆强复习资料</a></li><li><a href="https://easylink.cc/18hdic">运筹学</a></li></ul>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 数学 </tag>
             
         </tags>
       
