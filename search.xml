@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title></title>
+      <link href="/2025/12/30/hexo-de-shi-yong/"/>
+      <url>/2025/12/30/hexo-de-shi-yong/</url>
+      
+        <content type="html"><![CDATA[<ol><li>在文件夹<code>Hexo</code>界面鼠标右键选择<code>Open Git Bash here</code>, 如下图.<br><img src="https://cdn.jsdelivr.net/gh/LuckyChen666666/MyImage@main/202512301441622.png" alt="image.png"></li><li>在打开的<code>MINGW64</code>窗口执行命令<code>hexo new &quot;XXX&quot;</code>, 其中XXX为所要新建的md文件名. (也可以在<code>source</code>—<code>_posts</code>文件夹下手动新建md文件以及修改已有md文件, 如下图)<br><img src="https://cdn.jsdelivr.net/gh/LuckyChen666666/MyImage@main/202512301449505.png" alt="image.png"></li><li>在打开的<code>MINGW64</code>窗口依次执行命令<code>hexo s</code>, <code>hexo g</code>, <code>hexo d</code>. (这一点可参考<a href="https://luckychen666666.github.io/2024/04/27/hello-world/">https://luckychen666666.github.io/2024/04/27/hello-world/</a>)</li></ol>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>微信公众号画带斜线的交换图</title>
       <link href="/2025/04/15/wei-xin-gong-zhong-hao-hua-dai-xie-xian-de-jiao-huan-tu/"/>
       <url>/2025/04/15/wei-xin-gong-zhong-hao-hua-dai-xie-xian-de-jiao-huan-tu/</url>
